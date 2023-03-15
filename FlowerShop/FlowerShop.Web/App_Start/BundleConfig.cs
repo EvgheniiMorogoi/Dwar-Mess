@@ -23,7 +23,7 @@ namespace FlowerShop.Web
                          "~/Scripts/bootstrap.js"));
 
                bundles.Add(new StyleBundle("~/Content/css").Include(
-                         "~/Content/bootstrap.css",
+                         "~/Content/quartz.bootstrap.min.css",//changed to the new bootstrap theme
                          "~/Content/site.css"));
           }
      }
