@@ -1,47 +1,45 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+     ViewBag.Title = "Home Page";
 }
 
-<div>
-     <h2>FlowerPower</h2>
-     <div style="position:fixed; bottom:0; right:0; width:300px;" class="disp-later">
-          <img id="flower" alt="mascota" />
-          <div id="text"></div>
+<div class="MyContainer">
+     <div id="MyImage">
+          <img src="https://static.wikia.nocookie.net/gtawiki/images/a/af/Flowers-GTASA.png" alt="Flowers example">
+          <h3>Buna, eu sunt cine sunt?</h3>
      </div>
 </div>
 
+<style>
+     .MyContainer {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+     }
+
+     #MyImage {
+          position: absolute;
+          bottom: 0;
+          right: -100%;
+     }
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-     
-     //flower message
-     //==========================================================
-     const message = "Salut eu sunt mascota";//trebuie de modificat inainte de prezentare 
-     //==========================================================
-     let i = 0;
-     const speed = 50;
+     $(document).ready(function () {
+          var img = $('#MyImage');
+          var MyContainer = img.parent();
+          var imgWidth = img.width();
+          var MyContainerWidth = MyContainer.width();
 
-     function LoadImage() {
-          const image = document.getElementById("flower");
-          const text = document.getElementById("text");
-          //flower image
-          image.src = "https://static.wikia.nocookie.net/gtawiki/images/a/af/Flowers-GTASA.png";
-          let rot = 0;
-          //animation
-          let interval = setInterval(function () {
-               rot += 0.15;
-               image.style.transform = "rotate(" + Math.sin(rot) + "deg)";
-          }, 10);
-     }
+          img.css('right', -imgWidth);
 
-     function typeWriter() {
-          if (i < message.length) {
-               text.innerHTML += message.charAt(i);
-               i++;
-               setTimeout(typeWriter, speed);
-          }
-     }
-     setTimeout(
-          () => {
-               LoadImage(); 
-               typeWriter();
-          }, 1500);
+          img.animate({
+               right: 0
+          }, 2000);
+
+     });
 </script>
+
