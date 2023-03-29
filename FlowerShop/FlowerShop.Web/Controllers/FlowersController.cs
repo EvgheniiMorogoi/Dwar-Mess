@@ -8,10 +8,27 @@ namespace FlowerShop.Web.Controllers
 {
     public class FlowersController : Controller
     {
-        // GET: Flowers
-        public ActionResult Index()
-        {
-            return View();
-        }
-    }
+          private readonly ApplicationDbContext _context;
+
+          public FlowerController(ApplicationDbContext context)
+          {
+               _context = context;
+          }
+
+          public IActionResult Index()
+          {
+               var products = _context.Flowers.ToList();
+               return View(products);
+          }
+     }
 }
+/*
+  app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "products",
+        pattern: "products",
+        defaults: new { controller = "Products", action = "Index" });
+});
+it wouldn't be there next time ,just for save the code not too far from the project
+*/
