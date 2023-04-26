@@ -1,27 +1,12 @@
-﻿using System;
+﻿using FlowerShop.Web;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace FlowerShop.Web.Controllers
-{
-    public class FlowersController : Controller
-    {
-          private readonly ApplicationDbContext _context;
 
-          public FlowerController(ApplicationDbContext context)
-          {
-               _context = context;
-          }
 
-          public IActionResult Index()
-          {
-               var products = _context.Flowers.ToList();
-               return View(products);
-          }
-     }
-}
 /*
   app.UseEndpoints(endpoints =>
 {

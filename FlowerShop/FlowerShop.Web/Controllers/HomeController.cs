@@ -30,8 +30,9 @@ namespace FlowerShop.Web.Controllers
           public ActionResult Products()
           {
                ViewBag.Message = "Your contact page.";
-
-               return View();
+               var productRepository = new ProductRepository();
+               var products = productRepository.GetProducts();
+               return View(products);
           }
 
      }

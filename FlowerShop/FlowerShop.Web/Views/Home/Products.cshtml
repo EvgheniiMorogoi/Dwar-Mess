@@ -7,28 +7,31 @@
 }
 <h2>Aici se vor plasa produsele magazinului</h2>
 
-@model List<Product>
+@model IEnumerable<FlowerShop.Web.Models.Flower> 
 
-<h1>Our Products</h1>
+<h3>Products</h3>
 
-<div class="row">
-     @foreach (var product in Model)
-     {
-          <div class="col-md-4">
-               <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" src="@product.ImageUrl" alt="@product.Name">
-                    <div class="card-body">
-                         <h5 class="card-title">@product.Name</h5>
-                         <p class="card-text">@product.Description</p>
-                         <div class="d-flex justify-content-between align-items-center">
-                              <span class="text-muted">$@product.Price</span>
-                              <a href="#" class="btn btn-primary">Add to cart</a>
-                         </div>
-                    </div>
-               </div>
-          </div>
-     }
-</div>
+<table>
+     <thead>
+          <tr>
+               <th>Id</th>
+               <th>Name</th>
+               <th>Description</th>
+               <th>Price</th>
+          </tr>
+     </thead>
+     <tbody>
+          @foreach (var product in Model)
+          {
+               <tr>
+                    <td>@product.Id</td>
+                    <td>@product.Name </td>
+                    <td>@product.Description</td>
+                    <td>@product.Price</td>
+               </tr>
+          }
+     </tbody>
+</table>
 
 
 
