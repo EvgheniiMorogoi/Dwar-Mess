@@ -215,6 +215,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="Models\Account\LoginViewModel.cs" />
+    <Compile Include="Models\Account\RegisterViewModel.cs" />
     <Compile Include="Models\Flowers\FlowerIndexViewModel.cs" />
     <Compile Include="Models\Flowers\FlowerModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
