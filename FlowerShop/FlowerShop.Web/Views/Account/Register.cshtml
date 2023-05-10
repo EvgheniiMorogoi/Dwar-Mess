@@ -1,0 +1,63 @@
+﻿
+@using System.Linq;
+@{
+
+}
+@model FlowerShop.Web.Models.Account.RegisterViewModel
+
+<h1>Register Page</h1>
+
+
+@using (Html.BeginForm("register", "account", FormMethod.Post))
+{
+     <div class="pt-3">
+          <div class="form-group">
+               <label for="exampleInputEmail">Full name</label>
+               <div class="input-group">
+                    @Html.TextBoxFor(a => a.FullName, new { @class = "form-control form-control-lg border-left-0", placeholder = "Full name" })
+               </div>
+          </div>
+          <div class="form-group">
+               <label for="exampleInputEmail">Username</label>
+               <div class="input-group">
+                    @Html.TextBoxFor(a => a.Username, new { @class = "form-control form-control-lg border-left-0", placeholder = "Username" })
+               </div>
+          </div>
+          <div class="form-group">
+               <label for="exampleInputEmail">Email</label>
+               <div class="input-group">
+                    @Html.TextBoxFor(a => a.Email, new { @class = "form-control form-control-lg border-left-0", placeholder = "Email" })
+               </div>
+          </div>
+          <div class="form-group">
+               <label for="exampleInputPassword">Password</label>
+               <div class="input-group">
+                    @Html.PasswordFor(a => a.Password, new { @class = "form-control form-control-lg border-left-0", id = "exampleInputPassword", placeholder = "Password" })
+               </div>
+          </div>
+          <div class="form-group">
+               <label for="exampleInputPassword">Confirm password</label>
+               <div class="input-group">
+                    @Html.PasswordFor(a => a.ConfirmPassword, new { @class = "form-control form-control-lg border-left-0", id = "exampleInputPassword", placeholder = "Confirm password" })
+               </div>
+          </div>
+          @if (!ViewData.ModelState.IsValid)
+          {
+               <div class="alert alert-danger">
+                    <ul>
+                         @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                         {
+                              <li>@error.ErrorMessage</li>
+                         }
+                    </ul>
+
+               </div>
+          }
+          <div class="my-3">
+               <input class="btn btn-lg btn-primary font-weight-medium" type="submit" value="REGISTER">
+          </div>
+          <div class="mt-4 font-weight-light">
+               Already a member?  <a href="@Url.Action("login", "account")" class="text-primary">LogIn</a>
+          </div>
+     </div>
+}
