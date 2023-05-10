@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowerShop.Web", "FlowerShop.Web\FlowerShop.Web.csproj", "{DE958FAA-09C0-4E82-9FD8-D6F22DEB4147}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.FlowerShop.Web", "FlowerShop.Web\1.FlowerShop.Web.csproj", "{DE958FAA-09C0-4E82-9FD8-D6F22DEB4147}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.FlowerShop.BusinessLogic", "FlowerShop.BusinessLogic\2.FlowerShop.BusinessLogic.csproj", "{4310719F-30B6-41EA-9FC8-EBBA57BDC0D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.FlowerShop.Data", "FlowerShop.Data\3.FlowerShop.Data.csproj", "{265ACE48-ED7C-4306-B654-DE2EF7438710}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,11 +19,20 @@ Global
 		{DE958FAA-09C0-4E82-9FD8-D6F22DEB4147}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE958FAA-09C0-4E82-9FD8-D6F22DEB4147}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE958FAA-09C0-4E82-9FD8-D6F22DEB4147}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4310719F-30B6-41EA-9FC8-EBBA57BDC0D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4310719F-30B6-41EA-9FC8-EBBA57BDC0D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4310719F-30B6-41EA-9FC8-EBBA57BDC0D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4310719F-30B6-41EA-9FC8-EBBA57BDC0D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{265ACE48-ED7C-4306-B654-DE2EF7438710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{265ACE48-ED7C-4306-B654-DE2EF7438710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{265ACE48-ED7C-4306-B654-DE2EF7438710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{265ACE48-ED7C-4306-B654-DE2EF7438710}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
 		SolutionGuid = {C3A6913B-DAD3-4398-96E0-09350D53DAF7}
 	EndGlobalSection
 EndGlobal
