@@ -26,14 +26,5 @@ namespace FlowerShop.Web.Controllers
 
                return View();
           }
-
-          public ActionResult Products()
-          {
-               ViewBag.Message = "Your contact page.";
-               var productRepository = new ProductRepository();
-               var products = productRepository.GetProducts();
-               return View(products);
-          }
-
      }
 }
