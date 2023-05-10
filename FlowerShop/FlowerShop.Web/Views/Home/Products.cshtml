@@ -7,14 +7,13 @@
 }
 <h2>Aici se vor plasa produsele magazinului</h2>
 
-@model IEnumerable<FlowerShop.Web.Models.Flower> 
+@model IEnumerable<FlowerShop.Web.Models.Flowers.FlowerModel> 
 
 <h3>Products</h3>
 
 <table>
      <thead>
           <tr>
-               <th>Id</th>
                <th>Name</th>
                <th>Description</th>
                <th>Price</th>
@@ -24,7 +23,6 @@
           @foreach (var product in Model)
           {
                <tr>
-                    <td>@product.Id</td>
                     <td>@product.Name </td>
                     <td>@product.Description</td>
                     <td>@product.Price</td>
