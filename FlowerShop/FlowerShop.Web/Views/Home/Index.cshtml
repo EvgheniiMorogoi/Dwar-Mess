@@ -1,37 +1,124 @@
 ﻿@{
-     ViewBag.Title = "Home Page";
+    ViewBag.Title = "Home Page";
 }
 
+<div class="header">
+    <div class="box"></div>
+    <h1>Produse</h1>
+</div>
+
+<style>
+    .header {
+        display: flex;
+        flex-direction: column;
+        height: 10vh; /* Высота контейнера на весь видимый экран */
+        padding: 20px;
+    }
+
+        .header h1 {
+            margin-left: 0;
+            font-size: 24px;
+        }
+
+    .box {
+        flex: 1; /* Равномерное распределение высоты между контейнерами */
+        margin: 10px;
+    }
+</style>
+
+<div class="container">
+    <div class="image-container">
+        <img src="https://moonflowers.md/uploaded/thumbs/buket-iz-rozovoj-gortenzii-gvozdiki-i-eustomy_2739.jpg?v=1646403921" alt="цветы">
+        <div class="caption">Buchet din hortensie roz, garoafa și eustoma</div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://moonflowers.md/uploaded/thumbs/buket-iz-rozovoj-gortenzii-i-evkalipta_2719.jpg?v=1646386940" alt="цветы">
+        <div class="caption">Buchet din hortenzie roz și eucalipt</div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://moonflowers.md/uploaded/thumbs/sirenevyj-tuman_865.jpg?v=1623915998" alt="цветы">
+        <div class="caption">Ceață violet</div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://moonflowers.md/uploaded/thumbs/buket-iz-rozovoj-gortenzii-belyx-gvozdik-i-eustomy_3250.jpg?v=1663851588" alt="цветы">
+        <div class="caption">Buchet de hortensie roz, garoafe albe si eustoma</div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://moonflowers.md/uploaded/thumbs/chernaya-korobka-s-rozovoj-gortenziej_3314.jpg?v=1665577830" alt="цветы">
+        <div class="caption">Cutie neagră cu hortenzie roz</div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://moonflowers.md/uploaded/thumbs/buket-iz-25-bordovyx-pionov_1044.jpg?v=1623915999" alt="image">
+        <div class="caption">Buchet din 25 bujori bordo </div>
+    </div>
+</div>
+
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .image-container {
+        position: relative;
+        width: 400px;
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+        .image-container img {
+            display: block;
+            width: 100%;
+        }
+
+    .caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        color: black;
+        padding: 10px;
+    }
+</style>
+
 <div class="MyContainer">
-     <div id="MyImage">
-          <img src="https://static.wikia.nocookie.net/gtawiki/images/a/af/Flowers-GTASA.png" alt="Flowers example">
-          <h3>Buna, eu sunt cine sunt?</h3>
-     </div>
+    <div id="MyImage">
+        <img src="https://static.wikia.nocookie.net/gtawiki/images/a/af/Flowers-GTASA.png" alt="Flowers example">
+        <h3>Buna, doresti un buchet formidabil ?</h3>
+    </div>
 </div>
 
 <style>
 
-     #MyImage {
-          position: absolute;
-          bottom: 0;
-          right: -100%;
-     }
+    #MyImage {
+        position: absolute;
+        bottom: 0;
+        right: -100%;
+    }
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-     $(document).ready(function () {
-          var img = $('#MyImage');
-          var MyContainer = img.parent();
-          var imgWidth = img.width();
-          var MyContainerWidth = MyContainer.width();
+    $(document).ready(function () {
+        var img = $('#MyImage');
+        var MyContainer = img.parent();
+        var imgWidth = img.width();
+        var MyContainerWidth = MyContainer.width();
 
-          img.css('right', -imgWidth);
+        img.css('right', -imgWidth);
 
-          img.animate({
-               right: 0
-          }, 2000);
+        img.animate({
+            right: 0
+        }, 2000);
 
-     });
+    });
 </script>
 
