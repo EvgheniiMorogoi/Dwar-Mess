@@ -2,23 +2,26 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="header">
+<div class="Produse">
     <div class="box"></div>
     <h1>Produse</h1>
 </div>
 
 <style>
-    .header {
+    body {
+        margin: 0; /* Убираем отступы по умолчанию */
+    }
+
+    .Produse {
         display: flex;
         flex-direction: column;
-        height: 10vh; /* Высота контейнера на весь видимый экран */
+        align-items: center; /* Выравнивание элементов по вертикали по центру */
+        justify-content: center; /* Выравнивание элементов по горизонтали по центру */
         padding: 20px;
     }
 
-        .header h1 {
-            position:absolute;
-            margin-left: 10px; /* Заставляет заголовок сместиться влево */
-            font-size: 24px;
+        .Produse h1 {
+            font-size: 40px;
         }
 
     .box {
@@ -92,7 +95,6 @@
 
 <div class="MyContainer">
     <div id="MyImage">
-        <img src="https://static.wikia.nocookie.net/gtawiki/images/a/af/Flowers-GTASA.png" alt="Flowers example">
         <h3>Buna, doresti un buchet formidabil ?</h3>
     </div>
 </div>
@@ -101,14 +103,15 @@
 
     #MyImage {
         display: flex;
-        flex-direction:column-reverse;
-        }
+        flex-direction: column-reverse;
+    }
 </style>
 
+/
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
     $(document).ready(function () {
-        var img = $('#MyImage');
         var MyContainer = img.parent();
         var imgWidth = img.width();
         var MyContainerWidth = MyContainer.width();
@@ -121,3 +124,5 @@
 
     });
 </script>
+
+<div class="container"></div>
