@@ -1,9 +1,108 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<main aria-labelledby="title">
-    <h2 id="title">@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
+<!DOCTYPE html>
+<html lang="en">
 
-    <p>Use this area to provide additional information.</p>
-</main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despre noi</title>
+    <style>
+        /* CSS стили */
+        .about-us {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            padding: 30px;
+            text-align: justify;
+            border-radius: 10px;
+        }
+
+            .about-us h2 {
+                font-size: 40px;
+                font-weight: bold;
+                color: #333;
+                margin-bottom: 20px;
+            }
+
+            .about-us p {
+                font-size: 16px;
+                line-height: 1.5;
+                color: #666;
+            }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .container-item {
+            flex-basis: 23%;
+            text-align: center;
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+            .container-item img {
+                width: 40px;
+                height: 40px;
+                margin-bottom: 10px;
+            }
+
+            .container-item h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+                font-weight: bold;
+                color: #333;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="about-us">
+        <h2>Despre noi</h2>
+        <p>
+            Flower-Power nu este doar livrarea florilor. Ne considerăm a fi o echipă care observă frumusețea din jurul
+            nostru și vrea să împărtășească frumusețea cu ceilalți. Fiecare compoziție de flori proaspete este pentru
+            noi un simbol al iubirii și gingășiei. În primul rând, acestea sunt emoții care pot fi livrate celor
+            dragi.
+        </p>
+        <p>
+            Suntem capabili să reducem distanța chiar și de 1000 de kilometri între oameni, deoarece granițele și
+            barierele nu sunt importante pentru gesturile frumoase. Este ușor să creezi o atmosferă festivă în casa ta
+            si vă susținem în acest sens. Cu dragoste către lună și înapoi - echipa Flower-Power.
+        </p>
+
+        <div class="container">
+            <div class="container-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Ping">
+                <h3>Livrare in decurs de 2 ore</h3>
+                <p>Livrăm comanda Dvs prin Chișinău in decurs de 2 ore de la momentul achitării. Sau puteți comanda livrare la orice ora. Livrăm non-stop!</p>
+            </div>
+            <div class="container-item">
+                <img src="https://www.freeiconspng.com/thumbs/credit-card-icon-png/credit-card-black-png-0.png" alt="Ping">
+                <h3>Achitare</h3>
+                <p>- Achitare Cash</p>
+                <p>- Card bancar</p>
+                <p>- Achitare Google Pay, Paynet, Bpay</p>
+            </div>
+            <div class="container-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/3180/3180103.png" alt="Ping">
+                <h3>Felicitare gratis la fiecare comanda</h3>
+                <p>Completăm comanda Dvs cu o felicitare gratuită, în care vă puteți indica mesajul de felicitare sau o puteți alege din exemplele de pe site.</p>
+            </div>
+            <div class="container-item">
+                <img src="https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/about-512.png" alt="Ping">
+                <h3>Despre noi</h3>
+                <p>Florăria Flower-Power livrează flori și cadouri în orice colț al Moldovei - 1681 localități. Livrarea prin Chișinău 24/24. (Cu comanda prealabilă în timpul orelor de lucru)</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<div class="">
+    <p> </p>
+    </div>
