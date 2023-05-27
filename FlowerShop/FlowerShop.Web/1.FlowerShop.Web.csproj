@@ -217,6 +217,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="Models\Account\LoginViewModel.cs" />
     <Compile Include="Models\Account\RegisterViewModel.cs" />
+    <Compile Include="Models\Flowers\FlowerDetailViewModel.cs" />
     <Compile Include="Models\Flowers\FlowerIndexViewModel.cs" />
     <Compile Include="Models\Flowers\FlowerModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -264,7 +265,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\ThemeChange.js" />
-    <Content Include="Unity.Mvc3.README.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -282,6 +282,7 @@
     <Content Include="Views\Home\Products.cshtml" />
     <Content Include="Views\Flowers\Index.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Flowers\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

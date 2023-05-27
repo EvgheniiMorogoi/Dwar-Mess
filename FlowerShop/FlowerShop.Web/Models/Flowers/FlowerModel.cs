@@ -7,6 +7,7 @@ namespace FlowerShop.Web.Models.Flowers
 {
      public class FlowerModel
      {
+          public int Id { get; set; }
           public string Name { get; set; }
           public string Description { get; set; }
           public decimal Price { get; set; }

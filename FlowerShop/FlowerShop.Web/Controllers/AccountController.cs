@@ -18,14 +18,10 @@ namespace FlowerShop.Web.Controllers
           private readonly UserManager<AppUserDbModel> _userManager;
           private readonly SignInManager<AppUserDbModel, string> _signInManager;
 
-          //public AccountController(UserManager<AppUserDbModel> userManager, SignInManager<AppUserDbModel, string> signInManager)
-          //{
-          //     _userManager = userManager;
-          //     _signInManager = signInManager;
-          //}
-          public AccountController()
+          public AccountController(UserManager<AppUserDbModel> userManager, SignInManager<AppUserDbModel, string> signInManager)
           {
-
+               _userManager = userManager;
+               _signInManager = signInManager;
           }
 
           [HttpGet]
@@ -63,7 +59,6 @@ namespace FlowerShop.Web.Controllers
           }
 
           [HttpPost]
-          [ValidateAntiForgeryToken]
           public async Task<ActionResult> Register(RegisterViewModel model)
           {
                if (!ModelState.IsValid)

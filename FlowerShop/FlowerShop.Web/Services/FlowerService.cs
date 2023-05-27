@@ -27,5 +27,16 @@ namespace FlowerShop.Web.Services
                     }).ToList(),
                };
           }
+
+          public FlowerDetailViewModel GetFlower(int id)
+          {
+               var flower = _flowerManager.GetById(id);
+               var flowerModel = new FlowerDetailViewModel();
+               flowerModel.model.Id = flower.Id;
+               flowerModel.model.Name = flower.Name;
+               flowerModel.model.Description = flower.Description;
+               flowerModel.model.Price = flower.Price;
+               return flowerModel;
+          }
      }
 }

@@ -37,12 +37,20 @@ namespace FlowerShop.BusinessLogic.Managers
 
           public List<FlowerDTO> GetAllFlowers()
           {
-               return _flowerRepository.GetAllFlowers().Select(x => new FlowerDTO() { Name = x.Name, Description = x.Description, Price = x.Price }).ToList();
+               return _flowerRepository.GetAllFlowers().Select(x => new FlowerDTO() {Id = x.Id, Name = x.Name, Description = x.Description, Price = x.Price }).ToList();
           }
 
           public FlowerDTO GetById(int id)
           {
-               throw new NotImplementedException();
+               var flower = _flowerRepository.GetById(id);
+               var FlowerDto = new FlowerDTO()
+               {
+                    Id = flower.Id,
+                    Name = flower.Name,
+                    Description = flower.Description,
+                    Price = flower.Price
+               };
+               return FlowerDto;
           }
 
           public void Update(FlowerDTO flower)

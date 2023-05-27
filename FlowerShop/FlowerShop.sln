@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.FlowerShop.BusinessLogic"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.FlowerShop.Data", "FlowerShop.Data\3.FlowerShop.Data.csproj", "{265ACE48-ED7C-4306-B654-DE2EF7438710}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1FlowerShop", "FlowerShop\1FlowerShop.csproj", "{B24CC907-9286-4EBF-8778-71596DCDE604}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,12 +29,16 @@ Global
 		{265ACE48-ED7C-4306-B654-DE2EF7438710}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{265ACE48-ED7C-4306-B654-DE2EF7438710}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{265ACE48-ED7C-4306-B654-DE2EF7438710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B24CC907-9286-4EBF-8778-71596DCDE604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B24CC907-9286-4EBF-8778-71596DCDE604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B24CC907-9286-4EBF-8778-71596DCDE604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B24CC907-9286-4EBF-8778-71596DCDE604}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
 		SolutionGuid = {C3A6913B-DAD3-4398-96E0-09350D53DAF7}
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
 	EndGlobalSection
 EndGlobal

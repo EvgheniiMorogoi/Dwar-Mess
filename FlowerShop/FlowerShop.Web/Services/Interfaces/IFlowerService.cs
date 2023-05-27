@@ -10,5 +10,6 @@ namespace FlowerShop.Web.Services.Interfaces
      public interface IFlowerService
      {
           FlowerIndexViewModel GetAllFlowers();
+          FlowerDetailViewModel GetFlower(int id);
      }
 }

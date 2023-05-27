@@ -27,7 +27,8 @@ namespace FlowerShop.Web.Controllers
           // GET: Flowers/Details/5
           public ActionResult Details(int id)
           {
-               return View();
+               var viewModel = _flowerService.GetFlower(id);
+               return View(viewModel);
           }
 
           // GET: Flowers/Create

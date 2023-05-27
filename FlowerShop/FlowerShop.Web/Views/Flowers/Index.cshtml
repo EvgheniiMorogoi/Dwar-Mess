@@ -17,6 +17,7 @@ else
                     <td scope="col">Nume floare</td>
                     <td scope="col">Descriere floare</td>
                     <td scope="col">Pret floare</td>
+                    <td scope="col">Details</td>
                </tr>
           </thead>
           <tbody>
@@ -26,6 +27,7 @@ else
                          <td scope="row">@item.Name</td>
                          <td>@item.Description</td>
                          <td>@item.Price</td>
+                         <td>@Html.ActionLink("View", "details","Flowers", new { id = item.Id }, new { @class = "btn btn-primarry" })</td>
                     </tr>
                }
           </tbody>
