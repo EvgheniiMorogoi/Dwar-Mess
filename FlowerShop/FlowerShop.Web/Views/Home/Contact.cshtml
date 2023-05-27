@@ -1,19 +1,97 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<main aria-labelledby="title">
-    <h2 id="title">@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
 
-    <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
-    </address>
+<!DOCTYPE html>
+<html lang="en">
 
-    <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-    </address>
-</main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* CSS стили */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        .contact-us {
+            background-color: #eee;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px auto;
+            max-width: 500px;
+        }
+
+            .contact-us h2 {
+                font-size: 40px;
+                font-weight: bold;
+                color: #333;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .contact-us .form-group {
+                margin-bottom: 20px;
+            }
+
+                .contact-us .form-group label {
+                    display: block;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                    color: #000;
+                }
+
+                .contact-us .form-group input[type="text"],
+                .contact-us .form-group input[type="tel"],
+                .contact-us .form-group textarea {
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                }
+
+                .contact-us .form-group textarea {
+                    resize: vertical;
+                    height: 100px;
+                }
+
+            .contact-us .submit-btn {
+                background-color: #4CAF50;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+
+                .contact-us .submit-btn:hover {
+                    background-color: #45a049;
+                }
+    </style>
+</head>
+
+<body>
+    <div class="contact-us">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Nume, Prenume</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">NR. de telefon</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Intrebarea / Propunerea DVS.</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

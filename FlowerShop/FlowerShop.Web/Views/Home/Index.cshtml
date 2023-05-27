@@ -1,37 +1,158 @@
 ﻿@{
-     ViewBag.Title = "Home Page";
+    ViewBag.Title = "Home Page";
 }
 
+<div class="Produse">
+    <div class="box"></div>
+    <h1>Buchetul Saptamanii</h1>
+</div>
+
+<style>
+    .body {
+        margin: 0; /* Убираем отступы по умолчанию */
+    }
+
+    .Produse {
+        display: flex;
+        flex-direction: column; ы
+        align-items: center; /* Выравнивание элементов по вертикали по центру */
+        justify-content: center; /* Выравнивание элементов по горизонтали по центру */
+        padding: 20px;
+    }
+
+        .Produse h1 {
+            font-size: 40px;
+        }
+
+    .box {
+        flex: 1; /* Равномерное распределение высоты между контейнерами */
+        margin: 10px;
+    }
+</style>
+
+<div class="container">
+    <div class="image-container">
+        <img src="https://moonflowers.md/uploaded/letnij-deni_827.jpg" alt="цветы">
+        <div class="caption">Zi de vara</div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://moonflowers.md/uploaded/thumbs/buket-iz-rozovoj-gortenzii-i-evkalipta_2719.jpg?v=1646386940" alt="цветы">
+        <div class="caption">Buchet din hortenzie roz și eucalipt</div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://moonflowers.md/uploaded/thumbs/sirenevyj-tuman_865.jpg?v=1623915998" alt="цветы">
+        <div class="caption">Ceață violet</div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://moonflowers.md/uploaded/thumbs/pion-bordovyj_897.jpg?v=1623915999" alt="цветы">
+        <div class="caption">Bujor bordo</div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://moonflowers.md/uploaded/thumbs/chernaya-korobka-s-rozovoj-gortenziej_3314.jpg?v=1665577830" alt="цветы">
+        <div class="caption">Cutie neagră cu hortenzie roz</div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://moonflowers.md/uploaded/thumbs/buket-iz-25-bordovyx-pionov_1044.jpg?v=1623915999" alt="image">
+        <div class="caption">Buchet din 25 bujori bordo </div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://moonflowers.md/uploaded/thumbs/buket-iz-15-irisov_2788.webp?v=1649233910" alt="image">
+        <div class="caption">Buchet din 15 irisi </div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://moonflowers.md/uploaded/thumbs/buket-iz-rozovyx-roz-_1681.webp?v=1649234061" alt="image">
+        <div class="caption">Buchet din trandafiri roz </div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://moonflowers.md/uploaded/thumbs/buket-iz-belyx-tyulipanov-i-irisov_2708.webp?v=1649233958" alt="image">
+        <div class="caption">Buchet din lalele albe si irisi </div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://moonflowers.md/uploaded/thumbs/yashhik-s-zajkoj-i-kinderami_2769.webp?v=1649234549" alt="image">
+        <div class="caption">Ladita cu iepure si kinder </div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://moonflowers.md/uploaded/thumbs/garmoniya_839.webp?v=1649234176" alt="image">
+        <div class="caption">armonie</div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://moonflowers.md/uploaded/thumbs/buket-iz-rozovoj-orxidei_2249.webp?v=1649234051" alt="image">
+        <div class="caption">Buchet din orhidee roz </div>
+    </div>
+</div>
+
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .image-container {
+        position: relative;
+        width: 300px;
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+        .image-container img {
+            display: block;
+            width: 100%;
+        }
+
+    .caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        color: black;
+        padding: 10px;
+    }
+</style>
+
 <div class="MyContainer">
-     <div id="MyImage">
-          <img src="https://static.wikia.nocookie.net/gtawiki/images/a/af/Flowers-GTASA.png" alt="Flowers example">
-          <h3>Buna, eu sunt cine sunt?</h3>
-     </div>
+    <div id="MyImage">
+        <h3>Buna, doresti un buchet formidabil ?</h3>
+    </div>
 </div>
 
 <style>
 
-     #MyImage {
-          position: absolute;
-          bottom: 0;
-          right: -100%;
-     }
+    #MyImage {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 </style>
 
+/
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
-     $(document).ready(function () {
-          var img = $('#MyImage');
-          var MyContainer = img.parent();
-          var imgWidth = img.width();
-          var MyContainerWidth = MyContainer.width();
+    $(document).ready(function () {
+        var MyContainer = img.parent();
+        var imgWidth = img.width();
+        var MyContainerWidth = MyContainer.width();
 
-          img.css('right', -imgWidth);
+        img.css('right', -imgWidth);
 
-          img.animate({
-               right: 0
-          }, 2000);
+        img.animate({
+            right: 0
+        }, 2000);
 
-     });
+    });
 </script>
 
+<div class="container"></div>
