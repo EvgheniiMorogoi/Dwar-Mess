@@ -1,0 +1,23 @@
+﻿<header role="banner" id="fh5co-header">
+     <div class="container">
+          <nav class="navbar navbar-default">
+               <div class="row">
+                    <div class="col-md-3">
+                         <div class="fh5co-navbar-brand">
+                              <a class="fh5co-logo" href="@Url.Action("Index","home")">Narrow</a>
+                         </div>
+                    </div>
+                    <div class="col-md-9 main-nav">
+                         <ul class="nav text-right">
+                              <li><a href="@Url.Action("Index","home")"><span>Home</span></a></li>
+                              <li><a href="@Url.Action("Services","products")">Services</a></li>
+                              <li><a href="@Url.Action("Index","products")">Products</a></li>
+                              <li><a href="@Url.Action("About","home")">About</a></li>
+                              <li><a href="@Url.Action("Contact","home")">Contact</a></li>
+                              @Html.Partial("_LoginPartial")
+                         </ul>
+                    </div>
+               </div>
+          </nav>
+     </div>
+</header>
