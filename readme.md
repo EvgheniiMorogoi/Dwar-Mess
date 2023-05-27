@@ -4,22 +4,33 @@ O platformă interactivă și ușor de utilizat, care oferă utilizatorilor posi
 Caracteristici și funcționalități ale aplicației noastre sunt:
 
   Pagina de start:
+  
  -Prezentarea ofertei și produselor cheie
+ 
  -Carusel cu imagini atractive și pline de culoare pentru a atrage atenția utilizatorilor
+ 
  -Navigare ușoară către alte pagini cu ajutorul navbarul-ui
  
   Vizualizare produse:
+  
  -Imagini clare și detaliate ale fiecărui produs, cu opțiunea de a mări imaginea pentru a vedea mai bine detaliile florilor
+ 
  -Descriere aprodusului, inclusiv specificații, dimensiuni, informații despre livrare etc.
  
    Procesul de comandă:
+   
   -Înregistrarea utilizatorilor și crearea unui cont personalizat
+  
   -Completarea informațiilor de livrare și facturare
   
    Administrare și gestionare:
+   
   -Panou de administrare pentru gestionarea produselor, stocului, comenzilor și utilizatorilor
+  
   -Actualizarea, adăugarea și ștergerea de produse
+  
  *Recenzii și evaluări:
+ 
   -Opțiunea pentru clienți de a lăsa recenzii și evaluări pentru produsele achiziționate
 
 ## Screenshot-uri, gif-uri, video-uri (imagini de le Jenia)
