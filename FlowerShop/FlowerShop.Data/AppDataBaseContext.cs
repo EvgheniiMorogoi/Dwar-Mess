@@ -9,16 +9,30 @@ using System.Threading.Tasks;
 
 namespace FlowerShop.Data
 {
-     public class AppDataBaseContext : IdentityDbContext<AppUserDbModel>, IAppDataBaseContext
+     //public class AppDataBaseContext : IdentityDbContext<AppUserDbModel>, IAppDataBaseContext
+     //{
+     //     public AppDataBaseContext():base("name=FlowerShop")
+     //     {
+     //     }
+
+     //     public DbSet<FlowerDbModel> Flowers { get; set; }
+     //     protected override void OnModelCreating(DbModelBuilder modelBuilder)
+     //     {
+     //          base.OnModelCreating(modelBuilder);
+     //     }
+     //}
+
+     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
      {
-          public AppDataBaseContext():base("name=FlowerShop")
+          public ApplicationDbContext()
+              : base("name=FlowerShop", throwIfV1Schema: false)
           {
           }
-
           public DbSet<FlowerDbModel> Flowers { get; set; }
-          protected override void OnModelCreating(DbModelBuilder modelBuilder)
+
+          public static ApplicationDbContext Create()
           {
-               base.OnModelCreating(modelBuilder);
+               return new ApplicationDbContext();
           }
      }
 }
