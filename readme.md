@@ -1,17 +1,3 @@
-#Proiect de an la Tehnologii Web si Analiza si Modelarea Sistemelor
-
-# [Project Name]
-În loc de Project Name scrieți tema proiectului, mai jos scrieți o descriere a aplicației web
-## Demo
-Această secție trebuie să includă screenshot-uri, gif-uri, video-uri și descrieri cu demonstrarea și explicația funcționalității aplicației web
-## Development/Setup
-Instruncțiuni despre cum să pornim proiectul
-Listați programele și versiunile necesare pentru a putea porni și dezvolta proiectul
-## Team/Echipă
-Lista de studenți care au contribuit la acest proiect
-
-
-
 lab 6
 
 # Magazin online de flori
