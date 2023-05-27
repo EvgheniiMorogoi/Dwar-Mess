@@ -1,34 +1,59 @@
 ﻿@{
-     Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 @{
-     ViewBag.Title = "Products";
+    ViewBag.Title = "Products";
 }
-<h2>Aici se vor plasa produsele magazinului</h2>
 
-@model IEnumerable<FlowerShop.Web.Models.Flowers.FlowerModel> 
+@model IEnumerable<FlowerShop.Web.Models.Flowers.FlowerModel>
 
-<h3>Products</h3>
+div class="Produse">
+<div class="box"></div>
+<h1>Produse</h1>
+</div>
+
+<style>
+    .body {
+        margin: 0; /* Убираем отступы по умолчанию */
+    }
+
+    .Produse {
+        display: flex;
+        flex-direction: column;
+        ы align-items: center; /* Выравнивание элементов по вертикали по центру */
+        justify-content: center; /* Выравнивание элементов по горизонтали по центру */
+        padding: 20px;
+    }
+
+        .Produse h1 {
+            font-size: 40px;
+        }
+
+    .box {
+        flex: 1; /* Равномерное распределение высоты между контейнерами */
+        margin: 10px;
+    }
+</style>
 
 <table>
-     <thead>
-          <tr>
-               <th>Name</th>
-               <th>Description</th>
-               <th>Price</th>
-          </tr>
-     </thead>
-     <tbody>
-          @foreach (var product in Model)
-          {
-               <tr>
-                    <td>@product.Name </td>
-                    <td>@product.Description</td>
-                    <td>@product.Price</td>
-               </tr>
-          }
-     </tbody>
+    <thead>
+        <tr>
+            <th>Name</th>zz
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Name </td>
+                <td>@product.Description</td>
+                <td>@product.Price</td>
+            </tr>
+        }
+    </tbody>
 </table>
 
 
