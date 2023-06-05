@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.5.33502.453
+VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.FlowerShop.Web", "FlowerShop.Web\1.FlowerShop.Web.csproj", "{DE958FAA-09C0-4E82-9FD8-D6F22DEB4147}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.FlowerShop.Web", "FlowerShop.Web\1.FlowerShop.Web.csproj", "{5E468BE2-A7AB-4A07-A95F-B3A9DB1E3786}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.FlowerShop.BusinessLogic", "FlowerShop.BusinessLogic\2.FlowerShop.BusinessLogic.csproj", "{4310719F-30B6-41EA-9FC8-EBBA57BDC0D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.FlowerShop.BusinessLogic", "FlowerShop.BusinessLogic\2.FlowerShop.BusinessLogic.csproj", "{0F1913D9-8347-483F-8594-C77F84624F32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.FlowerShop.Data", "FlowerShop.Data\3.FlowerShop.Data.csproj", "{265ACE48-ED7C-4306-B654-DE2EF7438710}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1FlowerShop", "FlowerShop\1FlowerShop.csproj", "{B24CC907-9286-4EBF-8778-71596DCDE604}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.FlowerShop.Data", "FlowerShop.Data\3.FlowerShop.Data.csproj", "{0DE1D327-EAF0-42BB-9066-0CF57EEB77AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,28 +15,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DE958FAA-09C0-4E82-9FD8-D6F22DEB4147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DE958FAA-09C0-4E82-9FD8-D6F22DEB4147}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DE958FAA-09C0-4E82-9FD8-D6F22DEB4147}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DE958FAA-09C0-4E82-9FD8-D6F22DEB4147}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4310719F-30B6-41EA-9FC8-EBBA57BDC0D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4310719F-30B6-41EA-9FC8-EBBA57BDC0D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4310719F-30B6-41EA-9FC8-EBBA57BDC0D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4310719F-30B6-41EA-9FC8-EBBA57BDC0D1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{265ACE48-ED7C-4306-B654-DE2EF7438710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{265ACE48-ED7C-4306-B654-DE2EF7438710}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{265ACE48-ED7C-4306-B654-DE2EF7438710}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{265ACE48-ED7C-4306-B654-DE2EF7438710}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B24CC907-9286-4EBF-8778-71596DCDE604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B24CC907-9286-4EBF-8778-71596DCDE604}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B24CC907-9286-4EBF-8778-71596DCDE604}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B24CC907-9286-4EBF-8778-71596DCDE604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E468BE2-A7AB-4A07-A95F-B3A9DB1E3786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E468BE2-A7AB-4A07-A95F-B3A9DB1E3786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E468BE2-A7AB-4A07-A95F-B3A9DB1E3786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E468BE2-A7AB-4A07-A95F-B3A9DB1E3786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F1913D9-8347-483F-8594-C77F84624F32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F1913D9-8347-483F-8594-C77F84624F32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F1913D9-8347-483F-8594-C77F84624F32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F1913D9-8347-483F-8594-C77F84624F32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DE1D327-EAF0-42BB-9066-0CF57EEB77AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DE1D327-EAF0-42BB-9066-0CF57EEB77AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DE1D327-EAF0-42BB-9066-0CF57EEB77AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DE1D327-EAF0-42BB-9066-0CF57EEB77AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C3A6913B-DAD3-4398-96E0-09350D53DAF7}
-		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+		SolutionGuid = {AAEA1190-62D2-4DBD-8D22-2F6C72A6E997}
 	EndGlobalSection
 EndGlobal

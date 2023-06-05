@@ -1,158 +1,125 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewData["Title"] = "Home Page";
 }
-
-<div class="Produse">
-    <div class="box"></div>
-    <h1>Buchetul Saptamanii</h1>
+@model FlowerShop.Web.Models.HomeIndexViewModel
+<div class="owl-carousel owl-carousel1 owl-carousel-fullwidth fh5co-light-arrow animate-box" data-animate-effect="fadeIn">
+    <div class="item"><a href="images/img_large_1.jpg" class="image-popup"><img src="https://images.unsplash.com/photo-1612328289561-0edd72aefc43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="image"></a></div>
+    <div class="item"><a href="images/img_large_2.jpg" class="image-popup"><img src="https://images.unsplash.com/photo-1575885399375-05b39445f3bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="image"></a></div>
+    <div class="item"><a href="images/img_large_3.jpg" class="image-popup"><img src="https://images.unsplash.com/photo-1563730031910-60f14687e33a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="image"></a></div>
+    <div class="item"><a href="images/img_large_4.jpg" class="image-popup"><img src="https://images.unsplash.com/photo-1567509773591-8ad6cd6e1031?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="image"></a></div>
+    <div class="item"><a href="images/img_large_5.jpg" class="image-popup"><img src="https://images.unsplash.com/photo-1615359450428-da8b71f676c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="image"></a></div>
 </div>
-
-<style>
-    .body {
-        margin: 0; /* Убираем отступы по умолчанию */
-    }
-
-    .Produse {
-        display: flex;
-        flex-direction: column; ы
-        align-items: center; /* Выравнивание элементов по вертикали по центру */
-        justify-content: center; /* Выравнивание элементов по горизонтали по центру */
-        padding: 20px;
-    }
-
-        .Produse h1 {
-            font-size: 40px;
-        }
-
-    .box {
-        flex: 1; /* Равномерное распределение высоты между контейнерами */
-        margin: 10px;
-    }
-</style>
-
-<div class="container">
-    <div class="image-container">
-        <img src="https://moonflowers.md/uploaded/letnij-deni_827.jpg" alt="цветы">
-        <div class="caption">Zi de vara</div>
-    </div>
-
-    <div class="image-container">
-        <img src="https://moonflowers.md/uploaded/thumbs/buket-iz-rozovoj-gortenzii-i-evkalipta_2719.jpg?v=1646386940" alt="цветы">
-        <div class="caption">Buchet din hortenzie roz și eucalipt</div>
-    </div>
-
-    <div class="image-container">
-        <img src="https://moonflowers.md/uploaded/thumbs/sirenevyj-tuman_865.jpg?v=1623915998" alt="цветы">
-        <div class="caption">Ceață violet</div>
-    </div>
-
-    <div class="image-container">
-        <img src="https://moonflowers.md/uploaded/thumbs/pion-bordovyj_897.jpg?v=1623915999" alt="цветы">
-        <div class="caption">Bujor bordo</div>
-    </div>
-
-    <div class="image-container">
-        <img src="https://moonflowers.md/uploaded/thumbs/chernaya-korobka-s-rozovoj-gortenziej_3314.jpg?v=1665577830" alt="цветы">
-        <div class="caption">Cutie neagră cu hortenzie roz</div>
-    </div>
-
-    <div class="image-container">
-        <img src="https://moonflowers.md/uploaded/thumbs/buket-iz-25-bordovyx-pionov_1044.jpg?v=1623915999" alt="image">
-        <div class="caption">Buchet din 25 bujori bordo </div>
-    </div>
-
-    <div class="image-container">
-        <img src="https://moonflowers.md/uploaded/thumbs/buket-iz-15-irisov_2788.webp?v=1649233910" alt="image">
-        <div class="caption">Buchet din 15 irisi </div>
-    </div>
-
-    <div class="image-container">
-        <img src="https://moonflowers.md/uploaded/thumbs/buket-iz-rozovyx-roz-_1681.webp?v=1649234061" alt="image">
-        <div class="caption">Buchet din trandafiri roz </div>
-    </div>
-
-    <div class="image-container">
-        <img src="https://moonflowers.md/uploaded/thumbs/buket-iz-belyx-tyulipanov-i-irisov_2708.webp?v=1649233958" alt="image">
-        <div class="caption">Buchet din lalele albe si irisi </div>
-    </div>
-
-    <div class="image-container">
-        <img src="https://moonflowers.md/uploaded/thumbs/yashhik-s-zajkoj-i-kinderami_2769.webp?v=1649234549" alt="image">
-        <div class="caption">Ladita cu iepure si kinder </div>
-    </div>
-
-    <div class="image-container">
-        <img src="https://moonflowers.md/uploaded/thumbs/garmoniya_839.webp?v=1649234176" alt="image">
-        <div class="caption">armonie</div>
-    </div>
-
-    <div class="image-container">
-        <img src="https://moonflowers.md/uploaded/thumbs/buket-iz-rozovoj-orxidei_2249.webp?v=1649234051" alt="image">
-        <div class="caption">Buchet din orhidee roz </div>
+<div id="fh5co-media-section">
+    <div class="container">
+        <div class="row animate-box">
+            <div class="col-md-9 col-md-offset-2 text-center heading-section">
+                <h3>
+                    Bine ați venit la Narrow!
+                </h3>
+                <p>
+                    La Narrow, suntem dedicați să aducem frumusețea naturii în viața dumneavoastră prin intermediul florilor proaspete și al aranjamentelor florale elegante. Suntem pasionați de arta florilor și ne bucurăm să creăm experiențe memorabile pentru clienții noștri.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            @if (Model.TopServices == null)
+            {
+                <h3>Not enough services were registered</h3>
+            }
+            else
+            {
+                <div class="col-md-7 animate-box">
+                    <div class="fh5co-cover" style="background-image: url(@Model.TopServices[0].Image);">
+                        <div class="desc">
+                            <p>@Model.TopServices[0].Name</p>
+                            <span>@Model.TopServices[0].Description</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="fh5co-cover">
+                        @foreach (var item in Model.TopServices.Where(x => x.Id != Model.TopServices[0].Id))
+                        {
+                            <div class="fh5co-cover-hero animate-box">
+                                <div class="fh5co-cover-thumb" style="background-image: url(@item.Image);"></div>
+                                <div class="desc-thumb">
+                                    <p>@item.Name</p>
+                                    <span>@item.Description</span>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
     </div>
 </div>
-
-<style>
-    .container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .image-container {
-        position: relative;
-        width: 300px;
-        margin: 10px;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-
-        .image-container img {
-            display: block;
-            width: 100%;
-        }
-
-    .caption {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: white;
-        color: black;
-        padding: 10px;
-    }
-</style>
-
-<div class="MyContainer">
-    <div id="MyImage">
-        <h3>Buna, doresti un buchet formidabil ?</h3>
+<!-- END fh5co-media-section -->
+<div id="fh5co-intro-section">
+    <div class="fh5co-intro-cover text-center animate-box" data-animate-effect="fadeIn" data-stellar-background-ratio="0.5" style="background-image: url(https://images.unsplash.com/photo-1471696035578-3d8c78d99684?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80);">
+        <a href="@Url.Action("ServicesIndex","ProductAndService")" class="btn">Emoțiile tale sunt prioritatea noastră</a>
     </div>
 </div>
+<!-- END fh5co-intro-section -->
+<div id="fh5co-product-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+                <h3>Produse</h3>
+                <p>La Narrow, suntem mândri să vă oferim o selecție impresionantă de produse florale, realizate cu pasiune și atenție la detalii. Indiferent de ocazie, suntem aici să vă ajutăm să găsiți aranjamentul floral perfect care să transmită emoții și să creeze momente memorabile.</p>
+            </div>
+        </div>
+        <div class="owl-carousel owl-carousel2">
+            @if (Model.TopProducts != null)
+            {
+                @foreach (var item in Model.TopProducts)
+                {
+                    <div class="item animate-box">
+                        <a href="@Url.Action("ViewProduct","ProductAndService",new {id = item.ID})" class="image-popup">
+                            <img src="@item.Image" class="product-img" alt="ProductImage">
+                        </a>
+                    </div>
+                }
+            }
+            else
+            {
+                <h3>Not enough products were registered</h3>
+            }
 
-<style>
-
-    #MyImage {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-</style>
-
-/
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<script>
-    $(document).ready(function () {
-        var MyContainer = img.parent();
-        var imgWidth = img.width();
-        var MyContainerWidth = MyContainer.width();
-
-        img.css('right', -imgWidth);
-
-        img.animate({
-            right: 0
-        }, 2000);
-
-    });
-</script>
-
-<div class="container"></div>
+        </div>
+    </div>
+</div>
+<!-- END fh5co-product-section -->
+<div id="fh5co-section" class="fh5co-grey-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 animate-box">
+                <div class="fh5co-inner">
+                    <i class="icon-tree"></i>
+                    <div class="holder-section">
+                        <h3>Buchete și aranjamente florale</h3>
+                        <p>Descoperiți bogăția și diversitatea buchetelor și aranjamentelor florale pregătite cu grijă de către echipa noastră talentată de florari.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 animate-box">
+                <div class="fh5co-inner">
+                    <i class="icon-thumbs-up"></i>
+                    <div class="holder-section">
+                        <h3>Plante de interior și de exterior</h3>
+                        <p>Adăugați o notă verde și vieții dumneavoastră cu plantele noastre de interior și de exterior.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 animate-box">
+                <div class="fh5co-inner">
+                    <i class="icon-gift"></i>
+                    <div class="holder-section">
+                        <h3>Cadouri florale personalizate</h3>
+                        <p>Vrem să vă ajutăm să faceți impresii puternice și durabile cu cadourile florale. De aceea, oferim opțiuni de personalizare pentru a crea cadouri unice și speciale.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
